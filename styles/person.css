@@ -1,0 +1,73 @@
+.person-card {
+    position: absolute;
+    top: 350px;
+    left: 5px;
+    width: 300px;
+    height: 290px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: var(--co-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 0 20px;
+    gap: 10px;
+    color: var(--co-black);
+}
+
+.person-card_title {
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+}
+
+.person-card_title::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: var(--co-black);
+}
+
+.person-card_preview {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.person-card_preview-image {
+    width: 120px;
+    height: 100%;
+    object-fit: cover;
+    object-position: -25px -10px;
+}
+
+.person-card_name {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.person-card_desc {
+}
+
+.person-card_desc_subtitle {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.person-card_list {
+    list-style: disc;
+    margin: 15px 0 0 15px;
+}
+
+.person-card_list-item {
+    font-size: 10px;
+    font-weight: 400;
+    margin: 18px 0 0 18px;
+}
